@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red {
+        color: red;
+      }
+
+      .yellow {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="myHeading">Masai School</h1>
+    <button onClick="changeRed()">Change Text color to red</button>
+    <button onClick="changeYellow()">Change Text color to yellow</button>
+
+    <script>
+      function changeRed() {
+        const heading = document.getElementById("myHeading");
+        heading.classList.remove("yellow");
+        heading.classList.add("red");
+      }
+
+      function changeYellow() {
+        const heading = document.getElementById("myHeading");
+        heading.classList.remove("red");
+        heading.classList.add("yellow");
+      }
+    </script>
+  </body>
+</html>
